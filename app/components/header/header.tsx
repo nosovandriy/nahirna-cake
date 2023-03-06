@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={classNames("fixed z-[100] h-24 w-full px-[68px] ", {
+      className={classNames("static z-[100] h-24 w-full", {
         "shadow-xl": navigationShadow,
       })}
     >
@@ -40,9 +40,13 @@ const Header = () => {
         </div>
         <Logo handleShowMobileMenu={handleShowMobileMenu} />
         <ul className="hidden gap-10 lg:flex">
-          <MenuItems className={"hover:border-b"} />
+          <MenuItems
+            className={
+              "border-b border-transparent hover:border-themeBrown-100"
+            }
+          />
         </ul>
-        <div className="flex cursor-pointer duration-300 hover:scale-110">
+        <div className="flex cursor-pointer fill-themeGray-60 duration-300 hover:scale-110 hover:fill-themeBrown-100">
           <ShoppingCart />
         </div>
       </nav>
@@ -92,7 +96,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <hr className="mx-auto h-px w-full bg-[#DFD9D7]"></hr>
+      <hr className="mx-auto h-px w-full bg-themeBrown-20"></hr>
     </header>
   );
 };

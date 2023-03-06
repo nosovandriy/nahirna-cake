@@ -1,5 +1,5 @@
 import Header from "@header/header";
-import "./globals.scss";
+import "@style/globals.scss";
 
 import { Raleway } from "next/font/google";
 
