@@ -1,4 +1,9 @@
-import "./globals.css";
+import Header from "@header/header";
+import "./globals.scss";
+
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className={raleway.className}>
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

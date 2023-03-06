@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import { Raleway } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ["cyrillic"] });
 
 export default function Home() {
   return (
-  <div>mainpage</div>
-  )
+    <div className={raleway.className}>
+      <div className="hidden">page main</div>
+    </div>
+  );
 }
