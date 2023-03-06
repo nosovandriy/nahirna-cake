@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply mx-auto my-0 max-w-[1440px] bg-themeCaramel px-[68px];
+  }
+
+  a {
+    @apply text-lg font-normal text-themeGray-100 hover:text-themeBrown-100;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-themeGray-100;
+  }
+
+  p {
+    @apply text-themeGray-60;
+  }
+
+  h1 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-xl font-medium text-themeGray-60;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  .primaryButton {
+    @apply h-14 w-72 rounded-full bg-themeBrown-100 text-themeGray-0 shadow-xl duration-300 hover:scale-105 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+  }
+}
