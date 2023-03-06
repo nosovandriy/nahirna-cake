@@ -3,7 +3,7 @@ import "./globals.scss";
 
 import { Raleway } from "next/font/google";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
