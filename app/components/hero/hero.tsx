@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main className="mt-20 flex h-full w-full items-center justify-center">
+    <section className="mt-20 flex w-full items-center justify-center">
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-10 self-center">
           <Image
@@ -31,7 +31,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

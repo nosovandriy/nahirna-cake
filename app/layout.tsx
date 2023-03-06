@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={raleway.className}>
+        <main className={raleway.className}>
           <Header />
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );

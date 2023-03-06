@@ -1,3 +1,4 @@
+import About from "@about/about";
 import Hero from "@hero/hero";
 import { Raleway } from "next/font/google";
 
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <div className={raleway.className}>
       <Hero />
+      <About />
     </div>
   );
 }
