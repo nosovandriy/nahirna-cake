@@ -8,7 +8,7 @@
   }
 
   a {
-    @apply text-lg font-normal text-themeGray-100 hover:text-themeBrown-100;
+    @apply text-lg font-normal text-themeGray-100 hover:text-themeBrown-100 font-text;
   }
 
   h1,
@@ -17,19 +17,19 @@
   h4,
   h5,
   h6 {
-    @apply text-themeGray-100;
+    @apply text-themeGray-100 font-title;
   }
 
   p {
-    @apply text-themeGray-60;
+    @apply text-themeGray-60 font-text;
   }
 
-  h1 {
-    @apply text-xl;
+  h2 {
+    @apply text-4xl font-bold text-themeBrown-100;
   }
 
   h3 {
-    @apply text-xl font-medium text-themeGray-60;
+    @apply text-2xl font-semibold text-themeGray-100;
   }
 
   li {
@@ -37,6 +37,10 @@
   }
 
   .primaryButton {
-    @apply h-14 w-72 rounded-full bg-themeBrown-100 text-themeGray-0 shadow-xl duration-300 hover:scale-105 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-20 text-lg font-normal text-themeGray-0 shadow-xl duration-300 hover:scale-105 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+  }
+
+  .secondaryButton {
+    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-300 hover:scale-105 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
   }
 }
