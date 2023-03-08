@@ -9,10 +9,10 @@ interface Catalog {
   images: string[];
 }
 
-export function useCatalog(): {
+export function useCatalog(isFullCatalog: boolean = true): {
   catalog: Catalog[];
 } {
-  const catalog = [
+  const fullCatalog = [
     {
       id: '1',
       title: "Баунті",
@@ -149,6 +149,10 @@ export function useCatalog(): {
       ],
     },
   ];
+
+  const smallCatalog = fullCatalog.slice(0, 6);
+
+  const catalog = isFullCatalog ? fullCatalog : smallCatalog;
 
   return { catalog };
 }
