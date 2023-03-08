@@ -1,7 +1,8 @@
+import Footer from "@footer/footer";
 import Header from "@header/header";
 import "@style/globals.scss";
 
-import { Sofia_Sans, Raleway } from "next/font/google";
+import { Sofia_Sans, Inter } from "next/font/google";
 
 const sofia = Sofia_Sans({
   subsets: ["cyrillic"],
@@ -9,10 +10,10 @@ const sofia = Sofia_Sans({
   variable: "--font-sofia",
 });
 
-const raleway = Raleway({
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ["cyrillic"],
   weight: "400",
-  variable: "--font-raleway",
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -28,9 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${raleway.variable} ${sofia.variable}`}>
+        <div className={`${inter.variable} ${sofia.variable}`}>
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
