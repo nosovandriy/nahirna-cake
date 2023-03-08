@@ -5,12 +5,12 @@
 <path d="M20.241 12.7229C20.7733 12.7229 21.2048 12.2914 21.2048 11.759C21.2048 11.2267 20.7733 10.7952 20.241 10.7952C19.7086 10.7952 19.2771 11.2267 19.2771 11.759C19.2771 12.2914 19.7086 12.7229 20.241 12.7229Z" fill="white"/>
 <defs>
 <radialGradient id="paint0_radial_408_647" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.6437 0.650001) scale(73.8975)">
-<stop stop-color="#F9ED32"/>
-<stop offset="0.36" stop-color="#EE2A7B"/>
-<stop offset="0.44" stop-color="#D22A8A"/>
-<stop offset="0.6" stop-color="#8B2AB2"/>
-<stop offset="0.83" stop-color="#1B2AF0"/>
-<stop offset="0.88" stop-color="#002AFF"/>
+<stop stopColor="#F9ED32"/>
+<stop offset="0.36" stopColor="#EE2A7B"/>
+<stop offset="0.44" stopColor="#D22A8A"/>
+<stop offset="0.6" stopColor="#8B2AB2"/>
+<stop offset="0.83" stopColor="#1B2AF0"/>
+<stop offset="0.88" stopColor="#002AFF"/>
 </radialGradient>
 </defs>
 </svg>
