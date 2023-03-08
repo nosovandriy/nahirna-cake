@@ -7,7 +7,7 @@ interface NavItem {
 
 const navItems: Array<NavItem> = [
   {
-    label: "Про нас",
+    label: "Про мене",
     page: "#about",
   },
   {

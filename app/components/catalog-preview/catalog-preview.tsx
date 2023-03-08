@@ -8,7 +8,7 @@ const CatalogPreview = () => {
   const { catalog } = useCatalog();
 
   return (
-    <section className="flex flex-col items-center gap-10">
+    <section className="flex flex-col items-center gap-10  pb-[120px]">
       <h2>Каталог</h2>
       <div className="grid grid-cols-3 gap-10">
         {catalog.map((cake) => (

@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         themeBrown: {
           20: "#DFD9D7",
-          50: "#A2714C",
+          50: "#81675F",
           100: "#624137",
           120: "#3C2A1C",
         },
@@ -29,7 +29,7 @@ module.exports = {
       },
       fontFamily: {
         title: ["var(--font-sofia)", ...fontFamily.sans],
-        text: ["var(--font-raleway)", ...fontFamily.sans],
+        text: ["var(--font-inter)", ...fontFamily.sans],
       },
       animation: {
         fadeIn: "fadeIn 1.5s",
