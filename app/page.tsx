@@ -1,14 +1,15 @@
 import About from "@about/about";
 import Hero from "@hero/hero";
-import { Raleway } from "next/font/google";
+// import { Raleway } from "next/font/google";
+import CatalogPreview from "@catalog-preview/catalog-preview";
 
-const raleway = Raleway({ subsets: ["cyrillic"] });
+// const raleway = Raleway({ subsets: ["cyrillic"] });
 
 export default function Home() {
   return (
-    <div className={raleway.className}>
+    <>
       <Hero />
-      <About />
-    </div>
+      <CatalogPreview />
+    </>
   );
 }
