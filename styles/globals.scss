@@ -24,6 +24,10 @@
     @apply text-themeGray-60 font-text;
   }
 
+  h1 {
+    @apply text-[78px] leading-[90px] font-medium text-themeBrown-100;
+  }
+
   h2 {
     @apply text-4xl font-bold text-themeBrown-100;
   }
@@ -32,15 +36,19 @@
     @apply text-[28px] font-semibold text-themeGray-100;
   }
 
+  h4 {
+    @apply font-text text-xl font-medium text-themeGray-100;
+  }
+
   li {
     @apply cursor-pointer;
   }
 
   .primaryButton {
-    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-20 text-lg font-normal text-themeGray-0 shadow-xl duration-200 hover:scale-90 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-14 text-lg font-normal text-themeGray-0 shadow-xl duration-500 hover:scale-95 hover:bg-themeBrown-50 active:bg-themeBrown-120;
   }
 
   .secondaryButton {
-    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-200 hover:scale-90 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
+    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-500 hover:scale-95 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
   }
 }

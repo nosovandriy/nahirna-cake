@@ -46,7 +46,7 @@ const Header = () => {
             }
           />
         </ul>
-        <div className="flex cursor-pointer fill-themeGray-60 duration-300 hover:scale-110 hover:fill-themeBrown-100">
+        <div className="flex cursor-pointer fill-themeGray-60 duration-300 hover:scale-110 hover:fill-themeBrown-100 ml-[120px]">
           <ShoppingCart />
         </div>
       </nav>

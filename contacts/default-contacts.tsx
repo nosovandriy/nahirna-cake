@@ -3,30 +3,35 @@ import { FbMessenger, Instagram, Telegram, Facebook, Viber } from '@icons/social
 export const defaultContacts = {
   instagram: 'https://www.instagram.com/viktoriia.nahirna/',
   facebook: 'https://www.facebook.com/viktoria.nosova.18',
-  facebookMessanger: 'https://m.me/viktoria.nosova.18',
+  facebookMessenger: 'https://m.me/viktoria.nosova.18',
   telegram: 'https://t.me/Nahirna_Vika',
   viber: 'viber://chat?number=%2B380961682394',
 };
 
 export const iconContacts = [
   {
-    title: defaultContacts.instagram,
+    title: 'Instagram',
+    link: defaultContacts.instagram,
     icon: <Instagram />,
   },
   {
-    title: defaultContacts.facebookMessanger,
+    title: 'FB Messenger',
+    link: defaultContacts.facebookMessenger,
     icon: <FbMessenger />,
   },
   {
-    title: defaultContacts.telegram,
+    title: 'Telegram',
+    link: defaultContacts.telegram,
     icon: <Telegram />,
   },
   {
-    title: defaultContacts.viber,
+    title: 'Viber',
+    link: defaultContacts.viber,
     icon: <Viber />,
   },
   {
-    title: defaultContacts.facebook,
+    title: 'Facebook',
+    link: defaultContacts.facebook,
     icon: <Facebook />,
   },
 ];

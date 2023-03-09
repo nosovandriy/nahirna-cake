@@ -26,10 +26,11 @@ const Header = () => {
               {iconContacts.map((iconContact, index) => (
                 <Link
                   key={index}
-                  href={iconContact.title}
+                  href={iconContact.link}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="easy-in cursor-pointer duration-300 hover:scale-110"
+                  title={iconContact.title}
                 >
                   {iconContact.icon}
                 </Link>
