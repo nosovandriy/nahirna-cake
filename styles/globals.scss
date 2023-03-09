@@ -45,10 +45,10 @@
   }
 
   .primaryButton {
-    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-14 text-lg font-normal text-themeGray-0 shadow-xl duration-500 hover:scale-95 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-14 text-lg font-normal text-themeGray-0 shadow-xl duration-500 active:scale-95 hover:bg-themeBrown-50 active:bg-themeBrown-120;
   }
 
   .secondaryButton {
-    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-500 hover:scale-95 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
+    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-500 active:scale-95 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
   }
 }

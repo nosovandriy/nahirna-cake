@@ -4,33 +4,60 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="flex w-full items-center justify-center mt-20">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col gap-10 self-center">
-          <Image
-            src="/assets/image/7.png"
-            alt="Hahirha Victoria with cheesecake"
-            width={520}
-            height={468}
-          />
-        </div>
-        <div>
-          <h1>Про мене</h1>
-          <h2>Я - Нагірна Вікторія, шеф кондитер</h2>
-          <p>
-            Любов до своєї справи та до людей. Саме це надихає мене робити нові
-            десерти та не зупинятися на досягнутому. Для приготування дійсно
-            смачного десерту я відбираю найкращих постачальників не тільки з
-            України, а й з усього світу! Використовую бельгільський та німецький
-            шоколад найкращих брендів Callebaut та Lubeca, італійське борошно
-            манітоба,бельгійські вершки Debic, натуральні фруктові пюре для
-            яскравих начинок, відбірні горіхи та горіхові пасти. Тут ви ніколи
-            не знайдете замінників масла, шкідливих консерватів чи підсилювачів
-            смаку.
-          </p>
-        </div>
+    <section className="grid grid-cols-12 gap-x-10">
+      <div className="col-span-3 col-start-1 translate-y-1/2 transform">
+        <Image
+          src="/assets/about-left.png"
+          alt="cheesecake ternopil Nahirna"
+          width={296}
+          height={360}
+          priority
+        />
+      </div>
+      <div className="col-span-4 col-start-5 items-center justify-center">
+        <Image
+          src="/assets/about-center.png"
+          alt="cheesecake ternopil Nahirna"
+          width={408}
+          height={606}
+          priority
+        />
+      </div>
+      <div className="col-span-4 col-start-9 my-auto">
+        <h2 className="mb-10">Я - Нагірна Вікторія, шеф кондитер</h2>
+        <p className="">
+          Любов до своєї справи та до людей. Саме це надихає мене робити нові
+          десерти та не зупинятися на досягнутому.
+          <br /> <br />
+          Для приготування дійсно смачного десерту я відбираю найкращих
+          постачальників не тільки з України, а й з усього світу!
+          <br /> <br />
+          Тут ви ніколи не знайдете замінників масла, шкідливих консерватів чи
+          підсилювачів смаку.
+        </p>
       </div>
     </section>
+    // <section className="relative mb-28 h-[70vh]">
+    //   <div className="absolute top-1/2 left-0 -translate-y-1/2 transform">
+    //     <Image
+    //       src="/assets/hero-small.png"
+    //       alt="cheesecake ternopil Nahirna"
+    //       width={296}
+    //       height={360}
+    //       priority
+    //     />
+    //   </div>
+    //   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+    //     <Image
+    //       src="/assets/hero-main.png"
+    //       alt="cheesecake ternopil Nahirna"
+    //       width={408}
+    //       height={606}
+    //       priority
+    //     />
+    //   </div>
+    //   <h4 className="relative z-50 pb-8">Я - Нагірна Вікторія, шеф кондитер</h4>
+    // </section>
   );
 };
 
