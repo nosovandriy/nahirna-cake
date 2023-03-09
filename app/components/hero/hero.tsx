@@ -4,34 +4,40 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main id="hero" className="mt-20 flex h-full w-full items-center justify-center">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col gap-10 self-center">
-          <Image
-            src="/assets/logo.svg"
-            alt="https://nahirnacake.com.ua/"
-            width={543}
-            height={164}
-            priority
-          />
-          <h3>
-            Подаруйте собі шматочок
-            <br></br>
-             справжнього блаженства - спробуйте наш чізкейк!
-          </h3>
-          <button className="primaryButton">Каталог</button>
-        </div>
-        <div>
-          <Image
-            src="/assets/image/6.png"
-            alt="https://nahirnacake.com.ua/"
-            width={730}
-            height={750}
-            priority
-          />
-        </div>
+    <section className="relative mb-28 h-[70vh]">
+      <h1 className="relative z-50 pt-40 pb-8">
+        Спробуйте наші
+        <br />
+        найсмачніші чізкейки
+        {/* Найсмачніші
+          <br />
+          чізкейки в Тернополі */}
+      </h1>
+      <h4 className="relative z-50 pb-8">
+        Десерти виготовлено тільки
+        <br />з якісних та натуральних продуктів
+      </h4>
+      <button className="primaryButton">Перейти в каталог</button>
+
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+        <Image
+          src="/assets/hero-main.png"
+          alt="cheesecake ternopil Nahirna"
+          width={408}
+          height={606}
+          priority
+        />
       </div>
-    </main>
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 transform">
+        <Image
+          src="/assets/hero-small.png"
+          alt="cheesecake ternopil Nahirna"
+          width={296}
+          height={360}
+          priority
+        />
+      </div>
+    </section>
   );
 };
 

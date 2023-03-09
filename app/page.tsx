@@ -6,9 +6,9 @@ import CatalogPreview from "@catalog-preview/catalog-preview";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <CatalogPreview />
-    </div>
+    </>
   );
 }
