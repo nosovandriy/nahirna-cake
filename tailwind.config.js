@@ -28,8 +28,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        title: ["var(--font-sofia)", ...fontFamily.sans],
-        text: ["var(--font-inter)", ...fontFamily.sans],
+        title: ["var(--font-sofia)", "sans-serif"],
+        text: ["var(--font-inter)", "sans-serif"],
       },
       animation: {
         fadeIn: "fadeIn 1.5s",

@@ -28,12 +28,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className={`${inter.variable} ${sofia.variable}`}>
-          <Header />
-          {children}
-          <Footer />
-        </div>
+      <body
+        className={`${inter.variable} ${sofia.variable} flex min-h-screen flex-col`}
+      >
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
