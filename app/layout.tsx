@@ -1,18 +1,19 @@
 import Footer from "@footer/footer";
 import Header from "@header/header";
+import { ModalProvider } from "@provider/use-context-provider";
 import "@style/globals.scss";
 
 import { Sofia_Sans, Inter } from "next/font/google";
 
 const sofia = Sofia_Sans({
   subsets: ["cyrillic"],
-  weight: "400",
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-sofia",
 });
 
 const inter = Inter({
   subsets: ["cyrillic"],
-  weight: "400",
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-inter",
 });
 
@@ -28,12 +29,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className={`${inter.variable} ${sofia.variable}`}>
+      <body
+        className={`${inter.variable} ${sofia.variable} flex min-h-screen flex-col`}
+      >
+        <ModalProvider>
           <Header />
-          {children}
+          <main className="flex-grow">{children}</main>
           <Footer />
-        </div>
+        </ModalProvider>
       </body>
     </html>
   );
