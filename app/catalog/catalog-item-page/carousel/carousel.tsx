@@ -18,9 +18,6 @@ export default function Carousel() {
   return (
     <>
       <Swiper
-        style={{
-          "--swiper-navigation-color": "white",
-        }}
         autoplay={{
           delay: 4000,
         }}
