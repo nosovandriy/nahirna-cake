@@ -8,7 +8,7 @@ interface NavItem {
 const navItems: Array<NavItem> = [
   {
     label: "Про мене",
-    page: "#about",
+    page: "/#about",
   },
   {
     label: "Каталог",
@@ -16,15 +16,15 @@ const navItems: Array<NavItem> = [
   },
   {
     label: "Відгуки",
-    page: "#testimonials",
+    page: "/#testimonials",
   },
   {
     label: "Доставка",
-    page: "#delivery",
+    page: "/#delivery",
   },
   {
     label: "Контакти",
-    page: "#contacts",
+    page: "/#contacts",
   },
 ];
 

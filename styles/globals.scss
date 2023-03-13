@@ -33,7 +33,7 @@
   }
 
   h2 {
-    @apply leading-[34px] text-4xl font-bold text-themeBrown-100;
+    @apply text-4xl font-bold leading-[34px] text-themeBrown-100;
   }
 
   h3 {
@@ -57,7 +57,7 @@
   }
 
   .secondaryButton {
-    @apply rounded-full border border-themeBrown-100 py-4 px-12 text-lg font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
+    @apply flex items-center justify-center rounded-full border border-themeBrown-100 py-4 px-12 text-lg font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
   }
 
   .sizeButton {

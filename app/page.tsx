@@ -7,9 +7,9 @@ import { PopUpBasket } from "@pop-up-basket/pop-up-basket";
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <CatalogPreview /> */}
+      <Hero />
+      <About />
+      <CatalogPreview />
       <CatalogItem />
       <PopUpBasket />
     </>
