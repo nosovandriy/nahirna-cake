@@ -30,11 +30,11 @@ const Header = () => {
 
   return (
     <header
-      className={classNames("static z-[100] h-20 w-full", {
+      className={classNames("static z-[40] w-full", {
         "shadow-xl": navigationShadow,
       })}
     >
-      <nav className="flex h-full items-center justify-between">
+      <nav className="flex h-[100px] items-center justify-between">
         <div className="md:hidden" onClick={handleShowMobileMenu}>
           <MobileMenu />
         </div>

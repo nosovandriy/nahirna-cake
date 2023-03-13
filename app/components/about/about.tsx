@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="grid grid-cols-12 gap-x-10">
+    <section id="about" className="grid grid-cols-12 gap-x-10">
       <div className="col-span-3 col-start-1 translate-y-1/2 transform">
         <Image
           src="/assets/about-left.png"

@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply h-screen scroll-smooth;
+  }
+
   body {
     @apply mx-auto my-0 max-w-[1440px] bg-themeCaramel px-[68px];
   }
 
   a {
-    @apply text-lg font-normal text-themeGray-100 hover:text-themeBrown-100 font-text;
+    @apply font-text text-lg font-normal text-themeGray-100 hover:text-themeBrown-100;
+  }
+
+  p {
+    @apply font-text text-base text-themeGray-60;
   }
 
   h1,
@@ -17,38 +25,45 @@
   h4,
   h5,
   h6 {
-    @apply text-themeGray-100 font-title;
-  }
-
-  p {
-    @apply text-themeGray-60 font-text;
+    @apply font-title text-themeGray-100;
   }
 
   h1 {
-    @apply text-[78px] leading-[90px] font-medium text-themeBrown-100;
+    @apply text-[78px] font-medium leading-[90px] text-themeBrown-100;
   }
 
   h2 {
-    @apply text-4xl font-bold text-themeBrown-100;
+    @apply leading-[34px] text-4xl font-bold text-themeBrown-100;
   }
 
   h3 {
-    @apply text-[28px] font-semibold text-themeGray-100;
+    @apply text-[28px] font-semibold;
   }
 
   h4 {
-    @apply font-text text-xl font-medium text-themeGray-100;
+    @apply font-text text-xl font-medium;
   }
 
   li {
     @apply cursor-pointer;
   }
 
+  button {
+    @apply font-text;
+  }
+
   .primaryButton {
-    @apply w-fit rounded-full bg-themeBrown-100 py-3 px-14 text-lg font-normal text-themeGray-0 shadow-xl duration-500 active:scale-95 hover:bg-themeBrown-50 active:bg-themeBrown-120;
+    @apply rounded-full bg-themeBrown-100 py-4 px-14 text-lg font-normal text-themeGray-0 duration-500 hover:bg-themeBrown-50 active:scale-95 active:bg-themeBrown-120;
   }
 
   .secondaryButton {
-    @apply w-fit rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 shadow-xl duration-500 active:scale-95 hover:border-themeBrown-50 active:active:bg-themeBrown-50;
+    @apply rounded-full border border-themeBrown-100 py-4 px-12 text-lg font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
+  }
+
+  .sizeButton {
+    @apply h-max rounded-[10px] border border-themeBrown-100 py-1.5 px-6 text-base font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
+  }
+  .notActiveSizeButton {
+    @apply rounded-[10px] border border-themeBrown-20 py-2 px-6 text-base font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
   }
 }

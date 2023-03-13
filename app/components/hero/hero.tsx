@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -9,15 +10,14 @@ const Hero = () => {
         Спробуйте наші
         <br />
         найсмачніші чізкейки
-        {/* Найсмачніші
-          <br />
-          чізкейки в Тернополі */}
       </h1>
       <h4 className="relative z-50 pb-8">
         Десерти виготовлено тільки
         <br />з якісних та натуральних продуктів
       </h4>
-      <button className="primaryButton">Перейти в каталог</button>
+      <Link href={"/catalog"}>
+        <button className="primaryButton">Перейти в каталог</button>
+      </Link>
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
         <Image

@@ -38,9 +38,9 @@ export const MenuItems: React.FC<Props> = ({ className, onClick }) => {
     <>
       {navItems.map((item, index) => (
         <li key={index} className={className}>
-          <Link href={item.page} onClick={onClick}>
+          <a href={item.page} onClick={onClick}>
             {item.label}
-          </Link>
+          </a>
         </li>
       ))}
     </>
