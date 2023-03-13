@@ -1,10 +1,16 @@
 "use client";
+import { useContext } from "react";
 
 import BreadCrumbs from "@breadcrumb/breadcrumbs";
 import { Add, Remove } from "@icons/add-remove";
 import Carousel from "./carousel/carousel";
+import { ContextProvider } from "@provider/use-context-provider";
 
 const CatalogItem = () => {
+  const { isOpenPopUpBasket, setIsOpenPopUpBasket } = useContext(ContextProvider);
+
+  console.log(isOpenPopUpBasket);
+
   return (
     <section>
       <BreadCrumbs />
@@ -33,14 +39,16 @@ const CatalogItem = () => {
           </div>
           <div className="mb-8 flex items-center gap-6">
             <p className="text-sm">Кількість</p>
-            <div className="flex justify-between gap-3 rounded-[10px] border border-themeBrown-20 py-1 px-3 text-base font-normal text-themeGray-100">
+            <div className="flex justify-between gap-3 rounded-[4px] border border-themeBrown-20 py-1 px-3 text-base font-normal text-themeGray-100">
               <Remove /> <p className="text-themeGray-100">1</p>
               <div>
                 <Add />
               </div>
             </div>
           </div>
-          <button className="primaryButton mb-10">Додати в кошик</button>
+          <button className="primaryButton mb-10" onClick={() => setIsOpenPopUpBasket(true)}>
+            Додати в кошик
+          </button>
           <p className="pb-4 text-xl font-medium">Склад та алергени</p>
           <p className="pb-6">
             шифоновий ванільний бісквіт, грушево-лимонний курд, карамелізовані

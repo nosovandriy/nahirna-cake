@@ -33,7 +33,7 @@
   }
 
   h2 {
-    @apply text-4xl font-bold text-themeBrown-100;
+    @apply leading-[34px] text-4xl font-bold text-themeBrown-100;
   }
 
   h3 {
@@ -53,15 +53,15 @@
   }
 
   .primaryButton {
-    @apply rounded-full bg-themeBrown-100 py-3 px-14 text-lg font-normal text-themeGray-0 duration-500 hover:bg-themeBrown-50 active:scale-95 active:bg-themeBrown-120;
+    @apply rounded-full bg-themeBrown-100 py-4 px-14 text-lg font-normal text-themeGray-0 duration-500 hover:bg-themeBrown-50 active:scale-95 active:bg-themeBrown-120;
   }
 
   .secondaryButton {
-    @apply rounded-full border border-themeBrown-100 py-2 px-12 text-lg font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
+    @apply rounded-full border border-themeBrown-100 py-4 px-12 text-lg font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
   }
 
   .sizeButton {
-    @apply rounded-[10px] border border-themeBrown-100 py-2 px-6 text-base font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
+    @apply h-max rounded-[10px] border border-themeBrown-100 py-1.5 px-6 text-base font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;
   }
   .notActiveSizeButton {
     @apply rounded-[10px] border border-themeBrown-20 py-2 px-6 text-base font-normal text-themeGray-100 duration-500 hover:border-themeBrown-50 active:scale-95 active:active:bg-themeBrown-50;

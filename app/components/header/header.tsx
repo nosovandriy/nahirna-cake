@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={classNames("static z-[100] w-full", {
+      className={classNames("static z-[40] w-full", {
         "shadow-xl": navigationShadow,
       })}
     >
